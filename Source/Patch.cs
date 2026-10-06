@@ -19,14 +19,14 @@ namespace RightClickMenuLagFix
     /// <summary>
     /// While a map right-click menu is open, FloatMenuMap regenerates every option for the selected pawn every 4th
     /// frame (FloatMenuMakerMap.GetOptions) just to grey out options that stopped being valid. With work-related mods
-    /// one regeneration can take 15-30 ms, so the menu stutters about 15 times a second. Regenerates every 2 seconds
+    /// one regeneration can take 15-30 ms, so the menu stutters about 15 times a second. Regenerates every 5 seconds
     /// instead. Choosing an option is still checked against freshly generated options (PreOptionChosen), so a stale
     /// option is greyed out on click instead of being executed.
     /// </summary>
     [HarmonyPatch(typeof(FloatMenuMap), nameof(FloatMenuMap.DoWindowContents))]
     public static class Patch_FloatMenuMap_DoWindowContents
     {
-        private const float RevalidateSeconds = 2f;
+        private const float RevalidateSeconds = 5f;
 
         private static readonly ConditionalWeakTable<FloatMenuMap, StrongBox<float>> lastRevalidation =
             new ConditionalWeakTable<FloatMenuMap, StrongBox<float>>();

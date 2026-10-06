@@ -9,7 +9,7 @@
 
 Vanilla regenerates every option of an open right-click menu every 4th frame, only to grey out options that are no longer valid. With many work-related mods one regeneration can take 15-30 ms, so the game stutters about 15 times a second for as long as the menu stays open.
 
-Fix: the options are re-checked every 2 seconds instead. Choosing an option is still checked against freshly generated options, as in vanilla, so an option that has become invalid is greyed out when clicked instead of being carried out.
+Fix: the options are re-checked every 5 seconds instead. Choosing an option is still checked against freshly generated options, as in vanilla, so an option that has become invalid is greyed out when clicked instead of being carried out.
 
 Safe to add to or remove from an existing save.</description>
   <modDependencies>

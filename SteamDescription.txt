@@ -4,14 +4,14 @@ Removes the stutter while a right-click menu is open on the map.
 
 [b]Cause:[/b] While the menu is open, vanilla regenerates every option for the selected pawn every 4th frame ([i]FloatMenuMap.DoWindowContents[/i] calling [i]FloatMenuMakerMap.GetOptions[/i]), only to grey out options that are no longer valid. Regenerating means asking every work giver whether the pawn can do something with the clicked things, plus every mod's menu providers. In a modded colony one regeneration measured 17 to 28 ms on average, with peaks over 100 ms, so the game stuttered about 15 times a second.
 
-[b]Fix:[/b] An open menu re-checks its options every 2 seconds instead of every 4th frame. Opening the menu works exactly as before.
+[b]Fix:[/b] An open menu re-checks its options every 5 seconds instead of every 4th frame. Opening the menu works exactly as before.
 
-[h2]Is it safe?[/h2]Yes. When you choose an option, vanilla checks it again against freshly generated options before carrying it out. If it has become invalid while the menu was open, it is greyed out on click instead of being executed, just as before. The only difference is that an invalid option may stay white for up to 2 seconds until you click it.
+[h2]Is it safe?[/h2]Yes. When you choose an option, vanilla checks it again against freshly generated options before carrying it out. If it has become invalid while the menu was open, it is greyed out on click instead of being executed, just as before. The only difference is that an invalid option may stay white for up to 5 seconds until you click it.
 
 [h2]Notes[/h2][list]
 [*]Safe to add to or remove from an existing save.
 [*]Only affects menus on the map; the world map menu is unchanged.
-[*]You may still notice one short hitch every 2 seconds while a menu is open. That is the remaining vanilla regeneration cost of your mod list.
+[*]You may still notice one short hitch every 5 seconds while a menu is open. That is the remaining vanilla regeneration cost of your mod list.
 [*]If a future RimWorld update changes this code, the mod logs a warning and leaves the menu as it is.
 [/list]
 [hr][/hr]
