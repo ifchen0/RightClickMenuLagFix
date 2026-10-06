@@ -3,6 +3,7 @@
   <name>Right-Click Menu Lag Fix</name>
   <author>ifchen0</author>
   <packageId>ifchen0.rightclickmenulagfix</packageId>
+  <url>https://github.com/ifchen0/RightClickMenuLagFix</url>
   <supportedVersions><li>1.6</li></supportedVersions>
   <description>Removes the stutter while a right-click menu is open on the map.
 
