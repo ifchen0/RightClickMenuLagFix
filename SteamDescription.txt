@@ -1,3 +1,5 @@
+[h2]Now part of Vanilla Tune-Up[/h2]This mod has been merged into [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3815774199]Vanilla Tune-Up: Fixes & Tweaks[/url] as the [b]Right-click menu[/b] fix, and will not be updated further. You can switch at any time: while this mod is active, that part of Vanilla Tune-Up is skipped, so nothing is applied twice.
+[hr][/hr]
 Removes the stutter while a right-click menu is open on the map.
 
 [h2]The game stutters as long as a right-click menu stays open[/h2]Open a right-click menu with a colonist selected (on an enemy, an item, anything) and leave it open: the game hitches many times a second until the menu is closed. It gets worse the more mods add work types or menu options.
