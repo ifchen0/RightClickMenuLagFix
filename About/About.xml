@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
-  <name>Right-Click Menu Lag Fix</name>
+  <name>[DEPRECATED] Right-Click Menu Lag Fix</name>
   <author>ifchen0</author>
   <packageId>ifchen0.rightclickmenulagfix</packageId>
   <url>https://github.com/ifchen0/RightClickMenuLagFix</url>
   <supportedVersions><li>1.6</li></supportedVersions>
-  <description>Removes the stutter while a right-click menu is open on the map.
+  <description>Deprecated: this mod is now part of Vanilla Tune-Up: Fixes &amp; Tweaks and will not be updated further. Please switch to that mod.
+
+Removes the stutter while a right-click menu is open on the map.
 
 Vanilla regenerates every option of an open right-click menu every 4th frame, only to grey out options that are no longer valid. With many work-related mods one regeneration can take 15-30 ms, so the game stutters about 15 times a second for as long as the menu stays open.
 
